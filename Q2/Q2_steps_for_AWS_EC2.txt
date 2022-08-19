@@ -1,0 +1,59 @@
+Q2. Answer
+
+Go to AWS site :
+
+Login account -->
+
+then, go to Mumbai server,
+then, go to EC2 virtual server in the cloud,
+then, go to instances launch a new instance,
+then, go through it and more steps are ATTACHED IN SCREENSHOTS
+
+Instance launched then, go to instances
+click on launched instance and select it then go to security,
+then, add inbound and outbound rules,
+after adding it,
+
+then, go to CONNECT then click on SSH Client then Run the given commands on your SYSTEM
+
+chmod 400 220340126031.pem
+
+ssh -i 220340126031.pem ubuntu@ec2-13-233-255-41.ap-south-1.compute.amazonaws.com
+
+IT WILL give you a ubuntu virtual machine over cloud service using AWS
+
+public IPv4 address : 13.233.255.41
+
+RUN THESE COMMANDS ON HOST TERMINAL
+
+sudo apt update -y
+
+sudo apt install ssh
+
+sudo service ssh status   # check it is running or not
+
+sudo apt install mosquitto -y
+
+sudo apt install mosquitto-clients -y
+
+sudo service mosquitto status	  # check it is running or not
+
+then, RUN commands for mosquitto publisher and subscriber it will listen at port no. 1883
+
+mosquitto_sub -t diot -h 13.233.255.41 -p 1883 Hello VS!
+
+mosquitto_pub -t diot -h 13.233.255.41 -p 1883 Hello VS!
+
+then, go to mosquitto.conf file path then, create a file named as port.conf and write in it :
+
+listener 1883
+allow_anonymous true
+
+then, come back to home directory,
+
+then, run the commands for mosquitto pub & sub
+IT WILL EXECUTE PERFECTLY.
+
+
+
+

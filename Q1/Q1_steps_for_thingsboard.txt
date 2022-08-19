@@ -1,0 +1,42 @@
+Q1. Answer
+
+go to browser --> search for thingsboard demo click on it
+then, go to postman installed in system -->
+
+add a new collection named as PRN (220340126031)
+
+then, go to collection create a request, type description,
+then, enter the data in JSON format in Body in raw like this :
+
+{
+    "sensor_name" : "DHT22",
+    "temperature" : 27,
+    "humidity" : 85,
+    "device_name" : "Raspberry PI 4",
+    "location" : "pg-diot-class-room"
+}
+
+
+then, enter create a new device in thingsboard Demo website named as Raspberry PI 4
+
+SCREENSHOTS ARE ATTACHED
+
+it shows how I created new Device in Thingsboard then, go to Postman -->
+
+enter method as POST
+
+enter link http://demo.thingsboard.io/api/v1/prn_31/telemetry
+
+access token is prn_31
+
+save the data and then finally click on SEND
+
+It will send the given data to Thingsboard.
+
+go to thingsboard then go to your device click on it and then go to latest telemetry
+
+it will show the data which is sended from Postman.
+
+
+
+

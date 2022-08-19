@@ -1,0 +1,39 @@
+Q6. Answer
+
+Go to browser -> go to Github
+
+--> login to account
+
+github.com -> create repo -> deafult branch -> master -> with readme file
+
+create a new repository named as PRN (220340126031)
+
+Type this in Description "Vaibhav Sahu PRN 220340126031 Edge and Cloud Computing Lab Exam Submission Directory"
+
+and set master as default branch
+
+then, click on Create Repository, it will create Repository named as PRN 220340126031
+
+Push the Lab Exam Directory of PRN 220340126031 every codes, snippet, screenshots and solution steps are there in this directory
+
+push it to Git username : vaibhavsahudm at repository name 220340126031
+
+command for push :
+
+git push -u origin master
+
+then enter username and password
+
+then commit some message
+
+git commit -m "Edge and Cloud Computing Lab Exam"
+
+Step1 : git init .
+Step2 : git status
+Step3 : git config --global user.name vaibhavsahudm
+Step4 : git config --global user.email vaibhavsahudm@gmail.com
+Step5 : git add .
+Step6 : git commit -m "Edge and Cloud Computing Exam"
+
+
+

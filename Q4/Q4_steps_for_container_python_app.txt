@@ -1,0 +1,33 @@
+Q4. Answer
+
+Create a python application named as squareNum.py
+write code in it,
+
+Create a Dockerfile without using any extensions
+
+then, build and run the python application using these commands
+
+
+sudo docker build -t square .
+
+sudo docker run -it square  OR sudo docker run --name addcal -it square
+
+RUN the container and hold on:
+
+To verify that workdir is created and python file is copied inside conatiner
+
+RUN the command inside shell --> use sudo docker exec
+
+sudo docker ps  # it shows running docker
+
+sudo docker exec -it <containerid> sh
+
+--> It will prompt to container
+--> verify that
+go to pythoncodes directory it will show the python code RUN this in container
+
+IT WILL EXECUTE PERFECTLY.
+
+
+
+
